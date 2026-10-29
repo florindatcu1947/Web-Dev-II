@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PageTurners Book Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="wrapper nav-flex">
+      <h1>PageTurners</h1>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#books">Reading List</a></li>
+          <li><a href="#schedule">Meetings</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <section id="about" class="intro">
+      <h2>Monthly Reading Circle</h2>
+      <p>Explore our current selections, browse books by genre, and check our upcoming discussion timetable.</p>
+    </section>
+
+    <section id="books" class="catalog">
+      <h2>Curated Books</h2>
+      
+      <div class="filter-controls">
+        <label for="genre-select">Filter by genre:</label>
+        <select id="genre-select">
+          <option value="all">All Genres</option>
+          <option value="fiction">Fiction</option>
+          <option value="sci-fi">Sci-Fi</option>
+          <option value="non-fiction">Non-Fiction</option>
+        </select>
+        <span id="book-count" class="badge">Showing: 4 books</span>
+      </div>
+
+      <div class="book-grid" id="book-grid">
+        <article class="book-card" data-genre="fiction">
+          <div class="book-info">
+            <span class="genre-tag">Fiction</span>
+            <h3>The Midnight Library</h3>
+            <p class="author">Matt Haig</p>
+            <p class="summary">Between life and death there is a library where shelves go on forever, offering chances to see life unlived.</p>
+          </div>
+        </article>
+
+        <article class="book-card" data-genre="sci-fi">
+          <div class="book-info">
+            <span class="genre-tag">Sci-Fi</span>
+            <h3>Project Hail Mary</h3>
+            <p class="author">Andy Weir</p>
+            <p class="summary">A lone astronaut must save the Earth from an extinction-level catastrophe with help from an unexpected companion.</p>
+          </div>
+        </article>
+
+        <article class="book-card" data-genre="non-fiction">
+          <div class="book-info">
+            <span class="genre-tag">Non-Fiction</span>
+            <h3>Atomic Habits</h3>
+            <p class="author">James Clear</p>
+            <p class="summary">A practical guide on how small changes can lead to remarkable results in daily productivity and discipline.</p>
+          </div>
+        </article>
+
+        <article class="book-card" data-genre="fiction">
+          <div class="book-info">
+            <span class="genre-tag">Fiction</span>
+            <h3>Klara and the Sun</h3>
+            <p class="author">Kazuo Ishiguro</p>
+            <p class="summary">A poignant tale narrated from the perspective of an artificial friend observing modern human behavior.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="schedule" class="meetings">
+      <h2>Upcoming Sessions</h2>
+      <div class="meeting-box">
+        <h3>November Circle: Project Hail Mary</h3>
+        <p><strong>Date:</strong> 15 November 2026</p>
+        <p><strong>Location:</strong> Community Library & Virtual Link</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>&copy; 2026 PageTurners Book Club. Created for Web Development II Formative Assessment.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
